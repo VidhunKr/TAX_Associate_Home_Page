@@ -7,29 +7,30 @@
     <title>TAX Associate</title>
 
    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+   
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
    <link rel="stylesheet" href="./style.css"> 
-   <link rel="stylesheet" href="./server.js">
 </head>
 <body>
 
-    <!-- Header Section -->
 
     <header class="main-header">
-        <div class="header-top-bar">
+        <div class="top-bar">
             <div class="container">
-                <div class="contact-info">
+                <div class="top-contact">
                     <span><i class="fa-solid fa-phone"></i> 256 205 0001 / 012 564 8500</span>
                     <span><i class="fa-solid fa-envelope"></i> contact@sample.com</span>
                     <span><i class="fa-solid fa-clock"></i> Mon-Thu: 8:00 am to 9:00 pm</span>
                 </div>
-                <div class="social-icons">
+                <div class="socials">
                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
+
         <nav class="main-nav">
             <div class="container">
                 <a href="#" class="logo">
@@ -38,81 +39,82 @@
                         <path d="M6 12.5L10.5 17L18 7" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
+                
                 <button class="nav-toggle" id="nav-toggle-button">
                     <i class="fas fa-bars"></i>
                 </button>
-                <ul class="nav-links" id="nav-links-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Order Company</a></li>
-                    <li><a href="#">Apply for Tax Rebate</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+
+                <div class="nav-menu" id="nav-links-menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Order Company</a></li>
+                        <li><a href="#">Apply for Tax Rebate</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    
     <main>
 
         <!-- Hero Section -->
-        <section class="hero-section">
+        <section class="hero">
             <div class="container">
-                <div class="hero-content-wrapper">
                     <div class="hero-grid">
                         <div class="hero-text">
-                            <h1 class="hero-title">Take The Right Step For Your Business</h1>
-                            <p class="hero-subtitle">TAX Associate is a leading consultancy firm that provides simple, effective company registration, and accounting solutions to enterprises in Ireland.</p>
+                            <h1>Take The Right Step For Your Business</h1>
+                            <p>TAX Associate is a leading consultancy firm that provides simple, effective company registration, and accounting solutions to enterprises in Ireland.</p>
                             <a href="#" class="btn btn-primary">Get Started</a>
                         </div>
-                        <div class="hero-form-container">
+                        <div class="hero-form-wrapper">
                             <form class="hero-form">
-                                <h2 class="form-title">Apply For Tax Rebate Now</h2>
-                                <div class="form-group">
+                                <h2>Apply For Tax Rebate Now</h2>
+                                <div class="input-group">
                                     <label for="name">Name</label>
                                     <input type="text" id="name">
                                 </div>
-                                <div class="form-group">
+                                <div class="input-group">
                                     <label for="email">Email ID</label>
-                                    <input type="email" id="email">
+                                    <input id="email" type="email">
                                 </div>
-                                <div class="form-group">
+                                <div class="input-group">
                                     <label for="pps">PPS Number</label>
                                     <input type="text" id="pps">
                                 </div>
-                                <div class="form-group-checkbox">
+
+                                <div class="checkbox-group">
                                     <input type="checkbox" id="terms" checked>
                                     <label for="terms">I have read & agreed to the authorisation and the <a href="#">terms & conditions</a>.</label>
                                 </div>
+
                                 <button type="submit" class="btn btn-dark">Apply <i class="fa-solid fa-circle-right"></i></button>
                             </form>
                         </div>
                     </div>
-                </div>
             </div>
         </section>
 
-        <!-- Services Section -->
-
-        <section class="services-section">
+        <!-- What we do -->
+        <section class="services">
             <div class="container">
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fa-solid fa-clipboard-list"></i></div>
-                        <h3 class="service-title">Start Up Services</h3>
+                <div class="services-container">
+                    <div class="service-box">
+                        <div class="icon"><i class="fa-solid fa-clipboard-list"></i></div>
+                        <h3>Start Up Services</h3>
                         <p>We support entrepreneurs to build their businesses by providing them with the ideal company formation legal services.</p>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fa-solid fa-calculator"></i></div>
-                        <h3 class="service-title">Finance & Accounting</h3>
+                    <div class="service-box">
+                        <div class="icon"><i class="fa-solid fa-calculator"></i></div>
+                        <h3>Finance & Accounting</h3>
                         <p>We provide our clients with the best in the market, accounting, and financial services to help accelerate their business growth.</p>
                     </div>
-                    <div class="service-card">
-                        <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                        <h3 class="service-title">Risk & Assurance</h3>
+                    <div class="service-box">
+                        <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>Risk & Assurance</h3>
                         <p>We offer risk and assurance services for new as well as established businesses to help them reduce risks and overcome any disruption.</p>
                     </div>
                 </div>
